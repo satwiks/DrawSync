@@ -1,0 +1,130 @@
+html{
+	background:#eee url('./pattern.png') repeat;
+}
+body{
+	height:600px;
+	/*background:#000;   */
+	padding-top:20px; 
+	width: 1125px;
+	margin:auto; 
+	  -webkit-user-select: none;  /* Chrome all / Safari all */
+	  -moz-user-select: none;     /* Firefox all */
+	  -ms-user-select: none;      /* IE 10+ */
+
+	  /* No support for these yet, use at own risk */
+	  -o-user-select: none;
+	  user-select: none;          
+}
+#Wrapper{
+    /*border:1px solid;*/
+    margin:auto;
+    margin-top:30px;
+    height:inherit;
+    display:none;
+}
+#Online{
+	float: left;
+	margin-left:5px; 
+	width: 200px;
+	height:inherit;
+	border:5px solid #fff;
+	box-shadow:rgba(0,0,0,0.3) 0 0 5px 1px; 
+    background:#111;
+    color:#fff;
+}
+#sketch{
+    border:5px solid #fff;
+	width: 800px;
+	margin-left:5px; 
+	background:#fff; 
+	float: left;
+	height:inherit;
+	/*border:5px solid rgba(0,0,0,0.5);*/
+	box-shadow:rgba(0,0,0,0.3) 0 0 5px 1px,inset rgba(0,0,0,0.3) 0 0 1px 1px;  
+	cursor:crosshair;
+}
+
+#options{
+	float: left;
+	width:70px;
+	height: inherit;
+	margin-left:5px; 
+	box-shadow:rgba(0,0,0,0.3) 0 0 5px 1px; 
+    background:#111;
+    border:5px solid #fff; 
+    color:#fff;
+    font-family:helvetica;
+    text-align:center;
+
+}
+
+#options button{
+	float:left;
+	margin:4px 1px 1px 3px;
+	width:30px;
+	height:30px;  
+	background:#fff; 
+    border:none;
+}
+
+ul{padding-left:0px;text-align:left;margin-top:30px; }
+li{
+	width:180px;
+	text-overflow:ellipsis;
+	white-space:nowrap; 
+	overflow: hidden;
+	color: #222;
+    font-weight:bold;
+	font-family: helvetica;
+	background: #fff;
+	box-shadow:#000 -1px 0px 5px 1px;
+	margin-top:5px; 
+    margin-left:10px;
+    border-radius:5px 0px 0px 5px;
+	padding:10px 20px;
+	list-style: none;
+	/*font-weight: bold;*/
+}
+#status{
+	/*box-shadow: rgba(0,0,0,0.3) 0 0 1px 1px;*/
+	width: 200px;
+    height:15px;
+	text-align: center;
+	margin: 0px auto 10px;
+	padding:10px 0px;
+	font-family: helvetica;
+	background: #32E09B;
+}
+#status h3{
+	text-align:center;
+	margin:0px;
+    font-size:12px;
+    text-overflow:ellipsis;
+}
+#NameAsk{
+    border: 5px solid #fff;
+    box-shadow: #000 0 0 5px 1px;
+    margin: 100px auto;
+    display: block;
+    font-family: sans-serif;
+    padding: 100px;
+    background: rgba(104, 175, 149, 0.5);
+}
+
+#saveCan {
+    cursor: pointer;
+    font-size: 12px;
+    width: 64px;
+    height: 30px;
+    display: inline-block;
+    background: #fff;
+    color: #333;
+    margin-top: 5px;
+    padding-top: 8px;
+    box-sizing: border-box;
+}
+
+#saveCan:hover {
+	background:#B2D4B9;
+    font-weight: bold;
+}

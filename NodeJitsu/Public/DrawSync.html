@@ -1,0 +1,60 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>DrawSync</title>
+    <link rel="stylesheet" type="text/css" href="./Public/appStyle.css">
+</head>
+<body>
+    <div id="NameAsk">
+        <h1 style="color: #fff;width: 320px;white-space: nowrap;"> Welcome to Draw | Sync</h1>
+        <input type="text" id="NameTag" placeholder="Enter your name"/> <button id="NameTagB">Login</button>
+        
+        <div style="width:inherit;text-align:center;font-family:helvetica;color:#fff;display:none;" id="error" >
+        	<p>User name already taken... Try another</p>
+        </div>
+    </div>
+    <div id="Wrapper">
+        <div id="Online">
+            <div id="status"><h3>Ready to Draw...</h3></div>
+            <h3 style="font-family:helvetica;text-align:center;border-left:5px solid #fff;border-right:5px solid #fff;">ONLINE MEMBERS</h3>
+            <ul id="members">
+                <li>Loading</li>
+            </ul>
+        </div>
+        <div id="sketch"><canvas id="paint"> Canvas Not Supported </canvas></div>
+    
+         
+        <div id="options">
+            
+            <button class="color" style="background:#ffffff;" data-color="#ffffff"></button>
+            <button class="color" style="background:#333333;" data-color="#333333"></button>
+            <button class="color" style="background:#999999;" data-color="#999999"></button>
+            <button class="color" style="background:#cbcbcb;" data-color="#cbcbcb"></button>
+            <button class="color" style="background:#fe3333;" data-color="#fe3333"></button>
+            <button class="color" style="background:#ff9933;" data-color="#ff9933"></button>
+            <button class="color" style="background:#fdb7db;" data-color="#fdb7db"></button>
+            <button class="color" style="background:#fefe33;" data-color="#fefe33"></button>
+            <button class="color" style="background:#4ca86a;" data-color="#4ca86a"></button>
+            <button class="color" style="background:#5573f3;" data-color="#5573f3"></button>
+            <button class="color" style="background:#987233;" data-color="#987233"></button>
+            <button class="color" style="background:#983397;" data-color="#983397"></button>
+            
+            <input  id="inpColor" style="width:64px;border-radius:2px 2px 0 0;margin-top:5px;text-align:center;border:2px solid #fff;" type="text" placeholder="#FFFFFF" maxlength="7" />
+
+            <div id="preview" style="background:#fff;width:64px;height:20px;margin:auto;"></div>
+
+            <button id="pick" style="width:64px;margin-top:-2px;border-radius:0 0 2px 2px;">GetColor</button>
+            
+            <button id="clearCan" style="width:64px" >Clear</button>
+            <a id="saveCan">Download</a>
+            
+        </div>
+        <div style="clear:both;display:none;"></div>
+    </div>
+    
+    <script src="./Public/jquery.js"></script>
+    <script src="http://127.0.0.1:8080/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="./Public/appScript.js"></script>
+    
+</body>
+</html>
